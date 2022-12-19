@@ -4,9 +4,632 @@
         <h1>week 2 bl0g</h1>
         <p> wow i have learnt html and css 
         </p>
+
+        <h1>week 3 bl0g</h1>
+        <p>
+        wow welcome back to my blog
+        this week we learnt about
+        how to create a form with radio, checkbox and inputs.
+        nested, descendent elements 
+        !important means important it will override everything because its important so it should only be used in important situations!
+        to mobile friendly :-) through the media query and html inspector
+        position tags, (relative, absolute, fixed)
+        z-index (works only on elements with position tags)
+        flexbox
+        flex-direction
+        flex-wrap
+        flex-flow
+        justify-content
+        align-content
+        wireframes, fidelity, XD
+        
+        thx for reading
+        </p>
+
+        <h1>week 4 bl0g</h1>
+        <p>
+            this week we learnt how to create,
+            responsive images to automatically resize based on the screensize or column layouts (desktop/mobile)
+            using background-size: cover,
+            flex-grow, flex-basis, 
+            
+            and also wireframes to get started on the assignment 
+        </p>
+
+        <h1>week 5 async linkedin javascript</h1>
+        <p> in this week, i went through the first 5 chapters of javascript in linkedin learning
+            i learnt about
+            -load jvs in the html file, external file, and where to place the script in the html file
+            -objects
+            -strings
+            -DOM
+        </p>
+
+
+                
+        <h1>week 6 blog</h1>
+        <p>
+            recap of javascript basics 
+
+            -creating variables to store/manipulate data
+            let/var ?? = ?;
+
+            numbers - no quote marks " "
+            strings - " hello "
+            boolean - true/false
+
+            console.log is the print for javascript
+
+            string processing
+            str.length
+            str.toUpperCase();
+            str.toLowerCase();
+            trim/replace/charAt.........
+
+            Template literals
+            - are enclosed by back tick -  ` `
+
+            ===   STRICT EQUAL ( operator to compare data type and value same or not )
+
+            !==   STRICT NOT EQUAL TO ( compare 2 value to check both data type and value are not the same )
+
+            == IS EQUAL TO (compare 2 value to see if same)
+
+            != NOT EQUAL
+
+            >= / <= more/less than or equal to
+
+            Math.round('number'); to round off numbers
+
+            Logical Operators and or  ( compare results of more than one comparison operator )
+
+            && (test more than one condition)
+
+            true && true returns true
+            true && false returns false
+            false && true returns false
+            false && false returns false
+
+            || ( test at least one condition )
+
+            true && true returns true
+            true && false returns true
+            false && true returns true
+            false && false returns false
+
+            for loop syntax
+            i++ is increment
+
+            for (let i = 0; i < 10; i++){
+            console.log("Practice:" + i);
+
+            while loop syntax
+
+            let i = 0;
+            while (i < 10){
+            console.log("Practice:" + i);
+            i++;
+            }
+
+
+            while loop disadvantage -> infinite loop
+
+
+            creating array syntax;
+            let list=[];
+            list[0] = "First";
+            list[1] = "Second";
+            or
+            let list = ["First", "Second", "Third", "Fourth"]l;
+
+            array methods
+            pop() , push(), shift(), unshift(), splice(???), sort(), indexOf()
+
+            javascript array can store mixed data type (str float, numbers tgt)
+
+            functions
+            -
+            function name(){
+            }
+
+            name();
+
+            Javascript Objects
+
+            variable 
+            let ?? = {
+                key : value
+                key : value
+                
+                method
+                checkavailability: function(){
+                
+                };
+            };
+
+           accessing object
+           let ?? = object.key/property/method
+           
+           updating object
+           object.property = 'new update'
+
+
+           deleting
+           delete hotel.name;
+           hotel.name =''; (blank string)
+
+
+           Construction Notation
+
+           let hotel = new Object();
+            hotel.name = 'Raffles Hotel';
+            hotel.rooms = 100;
+            hotel.booked = 24;
+            hotel.gym = true;
+            hotel.roomTypes =
+            ['twin','suite','delux'];
+            hotel.checkAvailability: function() {
+            return this.rooms – this.booked;
+            } 
+
+        FUNCTION BASED OBJECTS
+
+        function Hotel(name, rooms, booked){
+            this.name = name;
+            this.rooms = rooms;
+            this.booked = booked;
+            this.checkAvailability = function() {
+            return this.rooms – this.booked;
+            };
+            }
+            
+            THIS keyword used to indictate object this function creates
+
+        
+        Multiple Object Instance
+        (both hotels but different object)
+        let favchoHotel = new Hotel('Favcho Hotel', 100, 25);
+        let lizzieHotel = new Hotel('Lizzie Inn', 48, 12);
+
+
+    Scoping
+    
+    var variables are top of the function or global if outside a function (hoisting)
+
+
+
+    let declarations are not hoisted to the top of the enclosing block
+    let is block-scoped meaning it only exist within the braces it is contained 
+    in {…}
+
+    var variables can be redeclared
+    let variables cannot be redeclared (syntax error)
+
+    variables declared with const are constants (value cannot be changed once set)
+
+    for..of.. loop
+
+    DOM
+
+    i learnt about the dom tree and its nodes.
+
+    accessing elements through the nodes
+    getElementById();
+    querySelector(); (using css selector)
+    getElementsByClassName();
+    getElementsByTagName();
+    querySelectorAll(); (selects all matching elements)
+
+    TRAVERSING BETWEEN ELEMENT NODES
+    parentNode
+    previous/nextSibling
+    first/lastChild
+    
+    can create variable to store the element found by using
+    var item = getElementby....
+
+    document refers to the document object.You would always have to access individual elements via the document object
+    document.getElementById('one');
+
+    item() method .... array syntax
+
+    still abit confused with this parts
+    <element>.className; to set new class
+    <element>.textContent;
+    <element>.innerHTML;
+
+
+        </p>
+
+    <h1>week 7 blog</h1>
+
+<p>
+    this week we went through DOM again and event handling, validation and json local storage
+
+    interaction = events -> trigger code -> code responds
+
+    UI events
+    -load
+    -unload
+    -error
+    -resize
+    -scroll
+
+KEYBOARD EVENTS
+-keydown (User first presses a key (repeats while key is depressed))
+-keyup  (User releases a key)
+-keypress (Character is being inserted (repeats while key is depressed))
+
+MOUSE EVENTS
+-click
+-dblclick
+-mousedown
+-mouseup
+-mousemove
+-mouseover
+-mouseout
+
+FOCUS EVENTS
+-focus / focusin Element gains focus
+-blur / focusout Element loses focus
+
+
+FORM EVENTS
+-input
+-change
+-submit
+-reset
+-cut
+-copy
+-paste
+-select
+
+EVENT LISTENER WITH NO PARAMETERS (VANILLA JS)
+element.addEventListener('event', functionName, [Boolean]);
+
+eg.
+function checkUsername(){
+    //code to check the length of username
+    }
+    var el = document.getElementById('username');
+    el.addEventListener('blur', checkUsername, false);
+
+
+EVENT LISTENER WITH PARAMETERS (VANILLA JS)
+
+el.addEventListener('blur', function(){
+    checkUsername(5);
+    }, false);
+
+
+    EVENT LISTENER WITH NO PARAMETERS (A)
+
+
+    function checkUsername(event){
+        var target = event.target; //get target of event
+        //do something
+        }
+        var el = document.getElementById('username');
+        el.addEventListener('blur', checkUsername, false);
+
+
+
+        EVENT LISTENER WITH PARAMETERS (B)
+
+        function checkUsername(event, minLength){
+            var target = event.target; //get target of event
+            //do something
+            }
+            var el = document.getElementById('username');
+            el.addEventListener('blur', function(event){
+            checkUsername(event, 5);
+            }, false);
+
+            
+    EVENT BUBBLING
+
+    A click on the inner <p> first runs onclick.
+    1. On that <p>.(most deeply nested)
+        2. Then on the outer <div>.
+        3. Then on the outer <form>.
+        4. And so on upwards till
+        the document object.
+    
+event.preventDefault()
+event.stopPropagation() (to stop bubbling to parent elements)
+
+
+
+        Focus vs Blur
+Focus is called when a HTML element has the
+focus - i.e. has the mouse cursor
+Blur is called when a HTML element lose the
+focus
+
+
+<input type="text" name="txtUsername" id="txtUsername">
+document.getElementById("txtUserName").value;
+//allows us to retrieve the value of the input box
+
+
+let rdoValue =
+document.querySelector('input[name="rdoFlavor"]:checked').value;
+
+document.querySelector('input[name="chkStyle"]:checked').value;
+
+let ?? = document.getElementById('locations').value;
+
+
+LOCAL STORAGE
+
+
+localStorage , sessionStorage
+local is stored when tab closed, all open windows/tab can access data    
+
+        Accessing the storage API:
+localStorage.setItem(key, value)
+sessionStorage.setItem(key, value)
+localStorage.getItem(key)
+sessionStorage.getItem(key)
+//key means identifier
+
+
+eg.
+localStorage.setItem('name', 'Luke Skywalker');
+let temp = localStorage.getItem('name');
+alert(localStorage['name']);
+alert(localStorage.name);
+
+
+accessing storage
+
+//Store information
+localStorage.setItem('age' , '12') ;
+localStorage.setltem('color' , 'blue');
+
+//Access information and store in variable
+let age = localStorage.getItem('age');
+let color= localStorage.getItem('color');
+
+//Number of items stored
+let items= localStorage.length;
+
+
+Using the dot notation
+
+//Store information (object notation)
+localStorage.age = 12;
+localStorage.color = 'blue';
+
+//Access information(object notation)
+let age = localStorage.age;
+let color= localStorage.color;
+
+//Number of items stored
+let items= localStorage.length;
+
+DATA FORMATS JSON
+
+let pokemon= [ 
+{
+
+    "name":"Pikachu",
+"hp":100,"attack":9,
+"defense":8,
+"color":"yellow",
+"type":"electric"
+},
+{
+"name":"squirtle",
+"hp":"47",
+"attack":"39",
+"defense":"38",
+"color":"blue",
+"type":"water"
+}]
+
+pokemon[0].name //Pikachu
+(IN DOUBLE QUOTES)    
+
+
+1: Convert a JavaScript object to a string:
+JSON.stringify();
+2: Convert a string to a JavaScript object:
+JSON.parse();
+
+
+eg.
+
+function Pokemon(name, hp, attack, defense, color, type) {
+    this.name = name;
+    this.hp = hp;
+    this.attack = attack;
+    this.defense = defense;
+    this.color = color;
+    this.type = type;
+    }
+//let's create our base and store pikachu
+
+    let pikachu = new Pokemon("Pikachu", 100, 9, 8, "yellow", "electric");
+    //
+    let giantPokeBall = [];
+    giantPokeBall.push(pikachu);
+    localStorage.setItem("pokemonList", JSON.stringify(giantPokeBall));
+    //creates an array
+    let tempList = JSON.parse(localStorage.getItem("pokemonList"));
+
+
+    Clearing Storage
+localStorage.clear();
+localStorage.removeItem(<item key>);
+</p>
+
+<h1>week 8 blog</h1>
+<p>
+this week we learnt about jquery and where to put scripts
+
+-put scripts before closing </body> tag so it loads only after the DOM
+
+JQUERY SELECTORS
+
+    $("div") – selects all <div> elements
+    $("li") – selects all <li> elements
+    $("p") – selects all <p> elements
+
+    $("#page") = select any with id of 'page'
+    $(".hot") = select any with class of 'hot'
+    $("li.cool") = select only li with class of 'cool'
+    $("li.cool a") = select only <a> that are inside <li> with class of
+    'cool'
+
+    Use a comma separate different search criteria
+    $("li, p") - select all <li> and <p>
+
+
+    $("#one").css('color'); (get value of css property)
+
+    EDIT CSS PROPERTY
+    $('div').css({
+        'background-color' : 'green',
+        'color' : 'white'
+        });
+    $('.cool').css('font-size', 20);
+
+
+REPLACING HTML CONTENT
+
+$('li').html('<b>Updated</b>');
+
+$('li').text('Updated'); ( ALL LIST ITEM WILL BE REPLACED WITH Updated)
+
+GET AND SET
+$('a').attr('href') -- retrieve the value of href
+$('a').attr('href', 'newvalue') -- set the value of
+the href attribute
+
+$(document).ready(function())
+
+DOM again
+
+prev,next,parent,children(),
+use children().first() for the first child
+use children().eq(n) for the index element, or "n + 1" child element ,
+where n is a number
+
+find,closest,parent,siblings,nextAll.....
+remove()... to remove element from DOM
+clone().... make a copy of element including child,attributes,
+
+DATA ATTRIBUTE
+name of data is whatever after the -
+data-NRIC
+data-Clowns
+
+Setting
+$(".highlight").data("color",
+"red");
+Getting
+// returns red
+$(".highlight").data("color");
+
+
+
+Getters
+// returns "highlight"
+$(".highlight").attr("class");
+$(".highlight").attr("data-color");
+
+Setters
+$(".highlight").attr("class",
+"special");
+$(".highlight").attr("data-color",
+"red");
+
+creating new html
+
+var n = $("<p>Hello World</p>");
+$("body").append(n);
+
+.prepend()
+.append()
+.before/after()
+
+$(???).attr()
+    .addClass()
+    .removeAttr()
+    .removeClass()
+
+
+
+event listener with jquery
+
+$("#username").on("blur", function(event){
+    checkUsername(event)
+    })
+
+$("input[name=username]") -> selects all input with name "username"
+
+to get
+$("#username").val()
+
+to set
+$("#username").val("toset")
+
+if ($("#checkbox:checked")){
+    console.log......
+}
+
+effects
+.show/hide/toggle/fadeIn/fadeOut/fadeTo/fadeToggle/slideUp/slideDown/slideToggle()
+.delay/stop/animate()
+
+all these still abit confusing to me, need to practice/try it out 
+</p>
+
+<h1>week 9 blog</h1>
+<p>ASYNC week introduced us to bootstrap
+
+    just by copying the bootstrap css and js, we can use bootstrap in our html now
+
+    bootstrap makes everything much easier with the grid layout, columns, and the website has
+    many components with the code for us to work with.
+
+    bootstrap grid uses 12 columns, and dividing it with how many you want, and using
+    the sm/md/lg.. keywords to make them responsive for different devices
+
+    5 responsive breakpoints = xs, s, m, l, xl
+
+    rows to control the gutter/padding vertically
+
+    .container and .container-fluid for width 100% accross all viewport sizes
+
+    can set column width to percentage %
+    can remove gutters with .no-gutter
+    or remove margin
+
+    
+    responsive image in bootstrap
+
+    use class="img-fluid" -> max-width:100% and height:auto
+
+    class="img-thumbnail" to create border radius thing
+
+    basically bootstrap makes responsiveness much easier with the components
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </body>
-
-
-
-
 </html>
